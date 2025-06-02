@@ -8,7 +8,7 @@ from openai import OpenAI
 logging.basicConfig(level=logging.INFO)
 
 # Получаем переменные окружения
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 USER_1_ID = int(os.getenv("USER_1_ID"))
 USER_2_ID = int(os.getenv("USER_2_ID"))
