@@ -39,7 +39,7 @@ async def translate_message(text, source_lang, target_lang):
 
 # Обработка входящих сообщений
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
+    user_id = update.message.from_user.id
     text = update.message.text
 
     if user_id == USER_1_ID:
