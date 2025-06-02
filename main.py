@@ -56,7 +56,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     translated = await translate_message(text, source_lang, target_lang)
 
-    await context.bot.send_message(chat_id=target_id, text=translated)
+await update.message.reply_text(translated)
+
 
 # Основная функция запуска
 if __name__ == "__main__":
